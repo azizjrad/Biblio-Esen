@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>recherche</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Recherche de livres dans bibliothèque</h2> <br>
+    <h3>Choix des critères de recherche</h3>
+
+    <form action="recherche.php" method="post">
+        <div>
+            <label for="titreLivre">Titre du livre</label> 
+            <input type="text" id="titre" placeholder="Titre du livre">
+        </div>
+
+    <br>
+
+        <div>
+            <label for="categorie">Catégorie du livre</label> 
+            <select id="categorie">
+            <option value="prog-web">Programmation Web</option>
+            <option value="ref-web">Référence Web</option>
+            <option value="Commerce-elec">Commerce Electronique</option>
+            <option value="Marketing">Marketing</option>
+            <option value="autre">(autre)</option>
+            </select>
+        </div>
+        
+    <br>
+
+        <div>
+            <button type="submit">Chercher livres</button>
+            <button type="reset">Annuler</button>
+        </div>
+        
+    </form>
+
+</body>
+</html>

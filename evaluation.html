@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Evaluation</title>
+</head>
+<body>
+    <h2>Evaluation des livres</h2>
+    <h3>Formulaire d'evaluation des livres</h3>
+    <a href="inscription.html">Si vous ètes déjà inscrit, cliquez ici</a>
+    <br>
+    <a href="inscription.html">Si vous ètes nouveau, cliquez ici</a>
+
+    <div>
+        <form action="evaluation.php" method="post">
+            <p>Evaluation</p>
+            <div>
+                <label for="choisir-livre">Choisir un livre</label>
+                <select name="Categorie" id="Categorie">
+                    <option value="HTML5 et CSS3">HTML5 et CSS3</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Réussir son référencement web 2015">Réussir son référencement web 2015</option>
+                </select>
+            </div>
+                <label for="domaine d'expertise">Votre niveau d'expertise dans le domaine de ce livre</label>
+                <input type="number" min="0" max="5" step="1" onChange="showValue(this.value)">
+                <span id="valeur_evaluation">0</span>
+                    <script>
+                        function showValue(newValue) {
+                            document.getElementById("valeur_evaluation").innerHTML=newValue;
+                        }
+                    </script>    
+
+            <div>
+                <label for="evaluation de livre">Evaluation de livre</label>
+                 <input type="range" min="0" max="5" step="1" onChange="showValue(this.value)">
+            </div>
+        </form>
+
+
+
+        <div>
+            <button type="submit">Enregistrer mon évaluation</button>
+            <button type="reset">Annuler</button>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

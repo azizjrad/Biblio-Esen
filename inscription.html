@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Inscription / Connexion</title>
+</head>
+<body>
+    <h2>Inscription  / Connecxion</h2>
+    <article>
+        <!--login forum-->
+        <form action="login_check.php" method="post">
+            <h3>Déjà Inscrit</h3>
+            <div>
+                <label for="username">Adresse e-mail:</label>
+                <input type="text" id="username" name="username" size="40" maxlength="50" required autofocus>
+            </div>
+        <br>
+
+            <div>
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" size="30" maxlength="30" required>
+            </div>
+
+        <br>    
+        
+            <div>
+                <button type="submit">Se connecter</button>
+                <button type="reset">Annuler</button>
+            </div>
+        </form>
+    </article>
+
+    <!--inscription forum-->
+
+    <article>
+        <form action="creation.php" method="post">
+            <h3>Nouveau Client</h3>
+            <div>
+                <label for="civilite">Civilité:</label>
+                <select id="civilite" name="civilite">
+                    <option value="M.">M.</option>
+                    <option value="Mme">Mme</option>
+                    <option value="Melle">Melle</option>
+                </select>
+            </div>
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="motdepasse">Mot de passe:</label>
+                <input type="password" id="motdepasse" name="motdepasse" size="30" maxlength="30" required>
+            </div>
+            <div>
+                <label for="confirm_motdepasse">Confirmation du mot de passe:</label>
+                <input type="password" id="confirm_motdepasse" name="confirm_motdepasse" required>
+            </div>
+            <div>
+                <label for="site_web">Url de votre site Web:</label>
+                <input type="url" id="site_web" name="site_web">
+            </div>
+            <div>
+                <label for="tel">Tel (numéro de 8 chiffres):</label>
+                <input type="text" id="tel" name="tel" pattern="[0-9]{8}">
+            </div>
+            <div>
+                <label for="date_naissance">Date de naissance:</label>
+                <input type="date" id="date_naissance" name="date_naissance" min="1990-01-01" max="2000-01-01" value="1992-01-01">
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter1" name="newsletter1">
+                <label for="newsletter1">Je m'abonne aux newsletters de l'ESEN</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter2" name="newsletter2">
+                <label for="newsletter2">Je m'abonne aux newsletters de la bibliothèque l'ESEN</label>
+            </div>
+            <div class="buttons">
+                <button type="submit">Créer mon compte</button>
+                <button type="reset">Annuler</button>
+                <p>*Champs obligatoires</p>
+            </div>
+        </form>
+    </article>
+    
+</body>
+</html>

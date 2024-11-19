@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <h2>Contact avec inscrits</h2>
+    <h3>Contact</h3>
+
+    <a href="inscription.html">Si vous ètes déjà inscrit, cliquez ici</a>
+    <br>
+    <a href="inscription.html">Si vous ètes nouveau, cliquez ici</a>
+    
+
+    <article>
+        <form action="contact.php" method="post">
+
+
+            <div>
+                <input type="checkbox">
+                <label for="info">Information</label>
+    
+                <input type="checkbox">
+                <label for="aide">Aide</label>
+    
+                <input type="checkbox">
+                <label for="sugg">Suggestion</label>
+                    
+                <input type="checkbox">
+                <label for="remerciements">Remerciements</label>
+            </div>
+
+            <div>
+                <label for="comment">Commentaire:</label>
+                <br>
+                <textarea name="comment" id="Commentaire" rows="5" cols="50"></textarea>
+            </div>
+            
+             
+            <input type="checkbox" checked>
+            <label for="contacter">Veuillez me contacter dès que possible, c'est urgent...</label>
+            
+            <div>
+                <button type="submit">Envoyer</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+    </article>
+</body>
+</html>
